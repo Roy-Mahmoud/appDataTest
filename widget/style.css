@@ -1,0 +1,52 @@
+.add-record {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-record__label {
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.add-record__input {
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: white;
+  padding: 4px 10px;
+  width: 90%;
+}
+
+.add-record__submit {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #10a24a;
+  border: none;
+  text-transform: capitalize;
+}
+
+.record {
+  display: flex;
+  justify-content: space-between;
+}
+
+.record__name {
+  width: 50%;
+}
+
+.record__actions {
+  display: flex;
+}
+
+.record__actions > span {
+  cursor: pointer;
+}
+
+.record__delete {
+  color: #f54545;
+  margin-right: 10px;
+}
+
+.record__edit {
+  color: #3173c5;
+}

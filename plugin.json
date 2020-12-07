@@ -1,0 +1,22 @@
+{
+  "author": "Buildfire",
+  "pluginName": "appData test",
+  "pluginDescription": "this plugin is for testing the appData functions",
+  "supportEmail": "devSupport@buildfire.com",
+  "control": {
+    "content": {
+      "enabled": true
+    },
+    "design":{
+      "enabled": false
+    },
+    "settings": {
+      "enabled": false
+    }
+  },
+  "widget": {
+
+  },
+  "features": [],
+  "languages": ["en"]
+}
