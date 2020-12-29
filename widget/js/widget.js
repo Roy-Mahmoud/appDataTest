@@ -5,6 +5,16 @@ class Widget {
 
 
   init() {
+    buildfire.deeplink.getAllDeeplinks({}, (err, data) => {
+      if(err) return console.log(err);
+      console.log('DEEPLINKS : ', data);
+      if(data && data.length) {
+        buildfire.deeplink.unregisterDeeplink(data[0].id, (err, result) => {
+          if(err) return console.log(err);
+          console.log('DELETE DEEPLINKS', result);
+        })
+      }
+    })
     this.submitButton = document.querySelector('.add-record__submit');
     document.querySelector('.add-record').addEventListener('submit', (e) => {
       e.preventDefault();
@@ -26,6 +36,10 @@ class Widget {
           input.value = ''
           this.renderRecords();
         });
+        buildfire.deeplink.registerDeeplink({id : new Date().toISOString(), name : 'test', queryString : '?something=true'}, (err, result) => {
+          if(err) return console.log(err);
+          console.log('INSERT DEEPLINKT', result);
+        })
       }
     })
 

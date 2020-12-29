@@ -1,6 +1,6 @@
 {
   "author": "Buildfire",
-  "pluginName": "appData test",
+  "pluginName": "appData testing",
   "pluginDescription": "this plugin is for testing the appData functions",
   "supportEmail": "devSupport@buildfire.com",
   "control": {
